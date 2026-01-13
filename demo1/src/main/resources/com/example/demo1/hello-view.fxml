@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/25"
+      fx:controller="com.example.demo1.HelloController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <BorderPane prefHeight="650.0" prefWidth="1200.0">
+
+        <top>
+            <VBox alignment="CENTER" prefHeight="83.0" prefWidth="1200.0"
+                  BorderPane.alignment="CENTER">
+                <children>
+                    <Label fx:id="welcomeText"
+                           contentDisplay="CENTER"
+                           text="Payroll Management Systems"
+                           textAlignment="CENTER">
+                        <font>
+                            <Font name="System Bold" size="47.0" />
+                        </font>
+                    </Label>
+                </children>
+                <padding>
+                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+            </VBox>
+        </top>
+
+        <center>
+            <GridPane hgap="20.0" vgap="10.0" BorderPane.alignment="CENTER">
+
+                <columnConstraints>
+                    <ColumnConstraints hgrow="ALWAYS" maxWidth="498.0" minWidth="10.0" prefWidth="421.0" />
+                    <ColumnConstraints hgrow="ALWAYS" maxWidth="416.0" minWidth="10.0" prefWidth="416.0" />
+                    <ColumnConstraints hgrow="ALWAYS" maxWidth="283.0" minWidth="10.0" prefWidth="283.0" />
+                </columnConstraints>
+
+                <rowConstraints>
+                    <RowConstraints maxHeight="507.0" minHeight="10.0" prefHeight="507.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="169.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="93.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+
+                <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                </padding>
+
+                <children>
+
+                    <!-- LEFT COLUMN -->
+                    <VBox prefHeight="529.0" prefWidth="374.0" spacing="10.0">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+
+                        <children>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Employer's Name">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfEmployerName" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Employee Ref no.:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfEmpRef" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Employee Name:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfEmpName" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Employee Address:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfEmpAddress" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Post Code:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfPostCode" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Inner City Weighting:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfICW" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Basic Salary:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfBasicSalary" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Over Time:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfOvertime" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Gross Pay:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfGrossPay" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Pensionable Pay:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfPensionablePay" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox spacing="10.0">
+                                <Label minWidth="160.0" text="Net Pay:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfNetPay" prefWidth="200.0" />
+                            </HBox>
+
+                        </children>
+                    </VBox>
+
+                    <!-- MIDDLE COLUMN -->
+                    <VBox prefWidth="416.0" spacing="10.0" GridPane.columnIndex="1">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+
+                        <children>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="Pay Date:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfPayDate" />
+                            </HBox>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="Tax Period:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <ComboBox fx:id="cbTaxPeriod" prefWidth="150.0" />
+                            </HBox>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="Tax Code:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <ComboBox fx:id="cbTaxCode" prefWidth="150.0" />
+                            </HBox>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="NI Code:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <ComboBox fx:id="cbNICode" prefWidth="150.0" />
+                            </HBox>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="NI Number:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfNINumber" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="Tax:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfTax" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="Pension:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfPension" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="Student Loan:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfStudentLoan" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="NI Payment:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfNIPayment" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="Taxable Pay:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfTaxablePay" prefWidth="200.0" />
+                            </HBox>
+
+                            <HBox>
+                                <Label minWidth="160.0" text="Deductions:">
+                                    <font><Font name="System Bold" size="12.0" /></font>
+                                </Label>
+                                <TextField fx:id="tfDeductions" prefWidth="200.0" />
+                            </HBox>
+
+                        </children>
+                    </VBox>
+
+                    <!-- RIGHT COLUMN -->
+                    <VBox spacing="10.0" GridPane.columnIndex="2">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+
+                        <children>
+
+                            <Label text="Pay Slip:">
+                                <font><Font name="System Bold" size="12.0" /></font>
+                                <padding><Insets bottom="30.0" /></padding>
+                            </Label>
+
+                            <TextArea fx:id="taPayslip"
+                                      editable="false"
+                                      prefHeight="426.0"
+                                      prefWidth="263.0"
+                                      wrapText="true" />
+
+                            <HBox>
+                                <Button fx:id="btnNetWages"
+                                        text="Net Wages"
+                                        prefWidth="150.0"
+                                        onAction="#handleNetWages" />
+                                <Button fx:id="btnPaySlip"
+                                        text="Pay Slip"
+                                        prefWidth="150.0"
+                                        onAction="#handlePaySlip" />
+                            </HBox>
+
+                            <HBox>
+                                <Button fx:id="btnReset"
+                                        text="Reset"
+                                        prefWidth="150.0"
+                                        onAction="#handleReset" />
+                                <Button fx:id="btnExit"
+                                        text="Exit"
+                                        prefWidth="150.0"
+                                        onAction="#handleExit" />
+                            </HBox>
+
+                        </children>
+                    </VBox>
+
+                </children>
+            </GridPane>
+        </center>
+
+    </BorderPane>
+</VBox>
